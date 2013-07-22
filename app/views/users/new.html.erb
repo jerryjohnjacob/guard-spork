@@ -2,6 +2,26 @@
 
 <div class="hero-unit">
   <h1>Welcome to Hell, New User!</h1>
-  <p>We'll only say this once:</p>
-  <%= link_to "Click Here NOW!!", about_path, class: "btn btn-large btn-primary" %>
+  <br/>
+  <div class="row">
+    <div class="span6 offset3">
+      <%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation %>
+
+      <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+      <% end %>
+    </div>
+  </div>
 </div>
