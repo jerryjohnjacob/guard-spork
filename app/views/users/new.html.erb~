@@ -1,0 +1,11 @@
+<%= provide(:title, 'New User') %>
+
+<div class="hero-unit">
+  <h1>Welcome to Hell, New User!</h1>
+  <p>We'll only say this once:</p>
+  <p>
+    <a class="btn btn-primary btn-large">
+      Click Here NOW!
+    </a>
+  </p>
+</div>
